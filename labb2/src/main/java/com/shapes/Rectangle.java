@@ -1,17 +1,34 @@
 package com.shapes;
 
 public class Rectangle extends Shape {
+    
+    private double height;
+    private double width;
 
     @Override
     double getArea() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getArea'");
+        return height * width;
     }
 
     @Override
     double getPerimeter() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPerimeter'");
+        return height * 2 + width * 2;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
     }
     
 }
