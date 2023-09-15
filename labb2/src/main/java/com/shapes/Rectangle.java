@@ -5,6 +5,15 @@ public class Rectangle extends Shape {
     private double height;
     private double width;
 
+    public Rectangle() {
+        
+    }
+
+    public Rectangle(double height, double width) {
+        this.height = height;
+        this.width = width;
+    }
+
     @Override
     double getArea() {
         return height * width;
@@ -30,5 +39,11 @@ public class Rectangle extends Shape {
     public void setWidth(double width) {
         this.width = width;
     }
+
+    // @Override
+    // public int compareTo(Shape r) {
+    //     Double v = this.getArea() - r.getArea();
+    //     return v.intValue();
+    // }
     
 }

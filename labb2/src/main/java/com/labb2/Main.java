@@ -1,6 +1,7 @@
 package com.labb2;
 
-import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.shapes.Circle;
 import com.shapes.Rectangle;
@@ -16,5 +17,13 @@ public class Main {
         } catch (Exception e) {
             System.out.println("An error occurred when trying to create the object");
         } 
+
+        List<Shape> l = new ArrayList<>();
+        l.add(new Circle(1.0));
+        l.add(new Circle(2000.0));
+        l.add(new Rectangle(100.1, 100.1));
+        l.add(new Rectangle(1.3, 1.3));
+        l.sort(null);
+        System.out.println(l);
     }
 }

@@ -4,6 +4,14 @@ public class Circle extends Shape {
 
     private double radius;
 
+    public Circle() {
+
+    }
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     @Override
     double getArea() {
         return 2 * Math.PI * this.radius;
@@ -21,5 +29,11 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+    // @Override
+    // public int compareTo(Shape c) {
+    //     Double v = this.getArea() - c.getArea();
+    //     return v.intValue();
+    // }
     
 }
