@@ -1,6 +1,7 @@
 package com.labb2;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import com.shapes.Circle;
@@ -24,6 +25,15 @@ public class Main {
         l.add(new Rectangle(100.1, 100.1));
         l.add(new Rectangle(1.3, 1.3));
         l.sort(null);
+        
         System.out.println(l);
+
+        HashSet<Shape> hs = new HashSet<>();
+        hs.add(new Circle(1.1));
+        hs.add(new Circle(1.1));
+        hs.add(new Circle(1.1));
+        hs.add(new Circle(1.3));
+
+        System.out.println(hs);
     }
 }
